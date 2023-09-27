@@ -1,0 +1,170 @@
+/* style.css */
+
+/* Use Microsoft Office font if available, otherwise provide a fallback */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 76px;
+    color: #3a1bd5;
+    font-weight: bold;
+}
+
+body {
+    
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, #0078D4 50%, #fff 50%); /* Create a gradient background */
+}
+
+.container1 {
+    background-color: #f5f5f5;
+    width: 300px;
+}
+.container {
+    max-width: 1200px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height:260px
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 9px;
+    border: 1px solid #e0d6d6;
+    border-radius: 4px;
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0078D4; /* Office Blue */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 15px 30px;
+}
+/* Style the login and signup buttons specifically */
+#loginButton {
+     /* Office Blue */
+}
+
+#signupButton {
+     /* A different color for the signup button */
+    margin-left: 25px; /* Add left margin to create a gap */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker Blue on Hover */
+}
+
+header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.right-header {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-header nav {
+    display: flex;
+}
+
+.right-header a {
+    color: #0078D4; /* Office Blue */
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+/* Add hover effect to the links */
+.right-header a:hover {
+    color: #0056b3; /* Darker Blue on Hover */
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide (e.g., phones) */
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for screens between 601px and 1024px wide (e.g., tablets) */
+    body {
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+
+    .container {
+        padding: 20px; /* Adjust padding for tablets */
+    }
+}
+
+/* Add more media queries for other screen sizes as needed */
+.right-header a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #450ce2;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 20px; /* Add space between links */
+    text-decoration: none; /* Remove underlines */
+}
+/* Add left and right images */
+
+
+.right-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%; /* Set the width to 50% to cover the right half */
+    height: 100%; /* Cover the entire height of the container */
+    background-image: url('face1.png'); /* Replace with your right image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Place the image behind the container content */
+}
+
+.left-text {
+    position: absolute;
+    left: 200px; /* Adjust the left spacing as needed */
+    top: 400px; /* Adjust the top spacing as needed */
+    z-index: 1; /* Place the text above the image */
+
+}
+
+.left-text h2 {
+    font-size: 44px;
+    color: #fff; /* Text color */
+    margin: 0;
+    padding: 100;
+    font-weight: bold;
+}
+
