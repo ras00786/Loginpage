@@ -1,20 +1,46 @@
 /* style.css */
 
 /* Use Microsoft Office font if available, otherwise provide a fallback */
-h1 {
+/* h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 76px;
-    color: #3a1bd5;
+    color: #2a06f6;
+    font-weight: bold;
+} */
+.white-text {
+    color: white; /* Set the color to white */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 76px;
+    font-weight: bold;
+}
+
+.blue-text {
+    color: blue; /* Set the color to blue */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 76px;
     font-weight: bold;
 }
 
 body {
-    
-    background-image: url();
+    background-image: linear-gradient(90deg, #0078D4 50%, #fff 50%); /* Create a gradient background */
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(90deg, #0078D4 50%, #fff 50%); /* Create a gradient background */
 }
+
+body::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Set the width to cover the first 50% */
+    height: 100%; /* Cover the entire height of the body */
+    background-image: url('image3.jpg'); /* Specify the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Position the pseudo-element behind the content */
+}
+
 
 .container1 {
     background-color: #f5f5f5;
@@ -161,10 +187,23 @@ header {
 }
 
 .left-text h2 {
-    font-size: 44px;
-    color: #fff; /* Text color */
+    font-size: 74px;
+    color: #07a1f4; /* Text color */
     margin: 0;
+    position: absolute; /* Set the position to absolute to control exact placement */
+    left: -150px; /* Adjust this value to move the text to your desired position */
+    top: 70%; /* Adjust this value to vertically center the text */
+    
     padding: 100;
     font-weight: bold;
+    font-family: "Lucida Handwriting", cursive;
+    display: inline-block; /* Make the text inline-block to allow for rotation */
+    transform: rotate(-90deg); /* Rotate the text 90 degrees counter-clockwise */
+    transform-origin: center; /* Set the rotation origin to the center */
+    white-space: nowrap; /* Prevent text from wrapping */
+    -webkit-text-stroke: 2px #f3f5f5; /* WebKit browsers (Safari, Chrome) */
+    /* Standard CSS */
+   /* Make the text transparent to show the stroke */
+    
 }
 
